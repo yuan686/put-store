@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.SeaAreaMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.entity.SeaArea">
+            <id property="seaAreaId" column="sea_area_id" jdbcType="INTEGER"/>
+            <result property="seaAreaName" column="sea_area_name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        sea_area_id,sea_area_name
+    </sql>
+</mapper>

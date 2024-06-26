@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.VoyageMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.entity.Voyage">
+            <id property="voyageId" column="voyage_id" jdbcType="INTEGER"/>
+            <result property="shipId" column="ship_id" jdbcType="INTEGER"/>
+            <result property="voyageName" column="voyage_name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        voyage_id,ship_id,voyage_name
+    </sql>
+</mapper>

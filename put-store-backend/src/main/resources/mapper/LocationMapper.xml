@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.LocationMapper">
+
+    <resultMap id="BaseResultMap" type="com.example.entity.Location">
+            <id property="locationId" column="location_id" jdbcType="INTEGER"/>
+            <result property="voyageId" column="voyage_id" jdbcType="INTEGER"/>
+            <result property="seaAreaId" column="sea_area_id" jdbcType="INTEGER"/>
+            <result property="position" column="position" jdbcType="VARCHAR"/>
+            <result property="xCoordinate" column="x_coordinate" jdbcType="DECIMAL"/>
+            <result property="yCoordinate" column="y_coordinate" jdbcType="DECIMAL"/>
+            <result property="detailedAddress" column="detailed_address" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        location_id,voyage_id,sea_area_id,
+        position,x_coordinate,y_coordinate,
+        detailed_address
+    </sql>
+</mapper>
